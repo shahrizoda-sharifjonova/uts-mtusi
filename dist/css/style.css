@@ -1381,6 +1381,63 @@
   width: 100%;
 }
 
+.employees {
+  padding-top: 145px;
+  padding-bottom: 40px;
+}
+
+.employees__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 69px;
+  color: #000000;
+  margin-bottom: 80px;
+}
+
+.employees__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.employees__item {
+  padding-bottom: 20px;
+}
+
+.employees__item:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.employees__img img {
+  width: 100%;
+}
+
+.employees__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.employees__p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1804,6 +1861,16 @@ input[type=number] {
     font-size: 16px;
     line-height: 140%;
   }
+
+  .employees {
+    padding-top: 60px;
+  }
+
+  .employees__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2087,6 +2154,21 @@ input[type=number] {
   .adres__desc {
     font-size: 18px;
   }
+
+  .employees__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .employees__content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .employees__img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2342,6 +2424,30 @@ input[type=number] {
 
   .adres__subtitle {
     font-size: 24px;
+  }
+
+  .employees__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .employees__content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .employees__item {
+    width: calc(50% - 15px);
+  }
+
+  .employees__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .employees__name {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -2616,5 +2722,15 @@ input[type=number] {
 
   .adres__desc {
     font-size: 16px;
+  }
+
+  .employees__title {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+  .employees__name {
+    font-size: 18px;
   }
 }

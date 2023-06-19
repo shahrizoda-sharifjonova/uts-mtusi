@@ -1,0 +1,87 @@
+.employees{
+    padding-top: 145px;
+    padding-bottom: 40px;
+    @include media(1200){
+        padding-top: 60px;
+    }
+    &__title{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 69px;
+        color: #000000;
+        margin-bottom: 80px;
+        @include media(1200){
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 60px;
+        }
+        @include media(992){
+            font-size: 50px;
+            line-height: 50px;
+        }
+        @include media(768){
+            font-size: 45px;
+            line-height: 45px;
+        }
+        @include media(575){
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 25px;
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        @include media(992){
+            justify-content: flex-start;
+        }
+        @include media(768){
+            justify-content: space-between;
+        }
+    }
+    &__item{
+        padding-bottom: 20px;
+        @include media(768){
+            width: calc(50% - 15px);
+        }
+        &:not(:last-of-type){
+            margin-right: 50px;
+            @include media(768){
+                margin-right: 0;
+            }
+        }
+    }
+    &__img{
+        @include media(992){
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__name{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: #000000;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        @include media(768){
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        @include media(575){
+            font-size: 18px;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+        color: #000000;
+    }
+}
