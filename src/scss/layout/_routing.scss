@@ -1,0 +1,124 @@
+.routing{
+    background: rgba(158, 141, 233, 0.35);
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    @include media(768){
+        padding-top: 35px;
+    }
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(768){
+            flex-direction: column;
+        }
+    }
+    &__left{
+        @include media(768){
+            margin-bottom: 35px;
+        }
+    }
+    &__title{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 86px;
+        line-height: 88px;
+        color: #000000;
+        max-width: 910px;
+        width: 100%;
+        margin-bottom: 30px;
+        @include media(1440){
+            font-size: 66px;
+            line-height: 120%;
+        }
+        @include media(1200){
+            font-size: 53px;
+            line-height: 120%;
+            margin-bottom: 20px;
+        }
+        @include media(992){
+            font-size: 45px;
+        }
+        @include media(575){
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 50px;
+        color: #000000;
+        max-width: 910px;
+        width: 100%;
+        margin-bottom: 40px;
+        @include media(1440){
+            font-size: 28px;
+            line-height: 40px;
+            max-width: 640px;
+            width: 100%;
+        }
+        @include media(1200){
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+        @include media(992){
+            font-size: 21px;
+            line-height: 140%;
+        }
+        @include media(575){
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+    &__btn{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #FFFFFF;   
+        padding: 22px 30px;
+        max-width: 497px;
+        width: 100%;
+        height: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #614791;
+        border-radius: 20px;
+        transition: 300ms ease;
+        @include media(1200){
+            font-size: 24px;
+            height: 75px;
+        }
+        @include media(992){
+            font-size: 20px;
+            height: 65px;
+            max-width: 310px;
+            width: 100%;
+        }
+        @include media(575){
+            font-size: 16px;
+            height: 55px;
+            max-width: 100%;
+        }
+        &:hover{
+            background: lighten($color: #614791, $amount: 7);
+        }     
+    }
+    &__img{
+        @include media(1440){
+            max-width: 450px;
+            width: 100%;
+        }
+        @include media(1200){
+            max-width: 400px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

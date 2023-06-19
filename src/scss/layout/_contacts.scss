@@ -1,0 +1,188 @@
+.contacts{
+    background: #9E8DE9;
+    border-radius: 30px;
+    padding: 130px 0;
+    @include media(1400){
+        padding: 100px 0;
+    }
+    @include media(992){
+        padding: 60px 0;
+    }
+    @include media(768){
+        padding: 30px 0;
+    }
+    &__subtitle{
+        text-align: center;
+        width: 100%;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 95px;
+        color: #FFFFFF;
+        margin-bottom: 88px;
+        @include media(992){
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+        @include media(768){
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        @include media(575){
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        @include media(1200){
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 700px;
+        width: 100%;
+        margin-right: 80px;
+        @include media(1200){
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
+        @include media(768){
+            margin-bottom: 20px;
+        }
+        @include media(575){
+            margin-bottom: 15px;
+        }
+        input{
+            &:not(:last-of-type){
+                margin-bottom: 30px;
+                @include media(768){
+                    margin-bottom: 20px;
+                }
+                @include media(575){
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 700px;
+        width: 100%;
+        @include media(1200){
+            max-width: 100%;
+        }
+        input{
+            margin-bottom: 30px;
+            @include media(768){
+                margin-bottom: 20px;
+            }
+            @include media(575){
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__input{
+        background: #FFFFFF;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        padding: 15px 30px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        color: #111;
+        @include media(992){
+            font-size: 19px;
+        }
+        @include media(768){
+            padding: 10px 20px;
+        }
+        @include media(575){
+            padding: 5px 20px;
+            font-size: 16px;
+        }
+        &::placeholder{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 40px;
+            color: #978D8D;
+            @include media(992){
+                font-size: 19px;
+            }
+            @include media(575){
+                font-size: 16px;
+            }
+        }
+    }
+    &__textarea{
+        background: #FFFFFF;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        padding: 15px 30px;
+        flex: 1 1 auto;
+        color: #111;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        color: #978D8D;
+        @include media(1200){
+            min-height: 170px;
+            height: 170px;
+        }
+        @include media(992){
+            font-size: 19px;
+        }
+        @include media(768){
+            padding: 10px 20px;
+        }
+        @include media(575){
+            font-size: 16px;
+        }
+        &::placeholder{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 40px;
+            color: #978D8D;
+            @include media(992){
+                font-size: 19px;
+            }
+            @include media(575){
+                font-size: 16px;
+            }
+        }
+    }
+    &__btn{
+        margin-top: 128px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 20px;
+        color: #FFFFFF;
+        background: #614791;
+        border-radius: 20px;
+        padding: 28px 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media(992){
+            margin-top: 60px;
+        }
+        @include media(768){
+            padding: 20px 72px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    }
+}
