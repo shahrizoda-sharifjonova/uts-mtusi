@@ -3,11 +3,12 @@ mixin contacts()
         .contacts__body.container 
             h2.contacts__subtitle Контакты
             form(action="").contacts__form
-                .contacts__left     
-                    input(type="text" placeholder="Имя" required).contacts__input 
-                    input(type="number" placeholder="Телефон" required).contacts__input 
-                    input(type="text" placeholder="Email" required).contacts__input 
-                .contacts__right 
-                    input(type="text" placeholder="Выберите свой курс" required).contacts__input 
-                    textarea(name="textarea" placeholder="Комментарий").contacts__textarea
-            button(type="submit").contacts__btn Записаться
+                .contacts__wrapper
+                    .contacts__left     
+                        input(type="text" placeholder="Имя" required).contacts__input 
+                        input(type="number" placeholder="Телефон" required).contacts__input 
+                        input(type="email" placeholder="Email" required).contacts__input 
+                    .contacts__right 
+                        input(type="text" placeholder="Выберите свой курс" required).contacts__input 
+                        textarea(name="textarea" placeholder="Комментарий").contacts__textarea
+                button(type="submit").contacts__btn Записаться

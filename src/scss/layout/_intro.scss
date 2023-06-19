@@ -78,6 +78,10 @@
         background: #614791;
         border-radius: 30px;
         margin-bottom: 46px;
+        transition: 300ms ease;
+        &:hover{
+            background: lighten($color: #614791, $amount: 7);
+        }
         @include media(992){
             margin-bottom: 30px;
         }

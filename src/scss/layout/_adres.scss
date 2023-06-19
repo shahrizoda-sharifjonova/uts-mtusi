@@ -56,6 +56,11 @@
         border: 2px solid #FFFFFF;
         border-radius: 15px;
         margin-bottom: 60px;
+        transition: 300ms ease;
+        &:hover{
+            background: #fff;
+            color: #9E8DE9;
+        }
         @include media(1400){
             margin-bottom: 30px;
         }    

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230619192849">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230619194917">
     <title>Document</title>
   </head>
   <body> 
@@ -164,17 +164,19 @@
               <div class="contacts__body container"> 
                 <h2 class="contacts__subtitle">Контакты</h2>
                 <form class="contacts__form" action="">
-                  <div class="contacts__left">    
-                    <input class="contacts__input" type="text" placeholder="Имя" required>
-                    <input class="contacts__input" type="number" placeholder="Телефон" required>
-                    <input class="contacts__input" type="text" placeholder="Email" required>
+                  <div class="contacts__wrapper">
+                    <div class="contacts__left">    
+                      <input class="contacts__input" type="text" placeholder="Имя" required>
+                      <input class="contacts__input" type="number" placeholder="Телефон" required>
+                      <input class="contacts__input" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="contacts__right"> 
+                      <input class="contacts__input" type="text" placeholder="Выберите свой курс" required>
+                      <textarea class="contacts__textarea" name="textarea" placeholder="Комментарий"></textarea>
+                    </div>
                   </div>
-                  <div class="contacts__right"> 
-                    <input class="contacts__input" type="text" placeholder="Выберите свой курс" required>
-                    <textarea class="contacts__textarea" name="textarea" placeholder="Комментарий"></textarea>
-                  </div>
+                  <button class="contacts__btn" type="submit">Записаться</button>
                 </form>
-                <button class="contacts__btn" type="submit">Записаться</button>
               </div>
             </div>
             <footer class="footer">  
@@ -204,6 +206,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20230619192849"> </script>
+    <script src="js/app.min.js?_v=20230619194917"> </script>
   </body>
 </html>

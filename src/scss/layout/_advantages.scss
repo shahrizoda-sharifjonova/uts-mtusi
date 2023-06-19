@@ -132,6 +132,10 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        transition: 300ms ease;
+        &:hover{
+            background: lighten($color: #614791, $amount: 7);
+        }
         @include media(768){
             font-size: 16px;
             line-height: 26px;

@@ -468,6 +468,13 @@
   background: #614791;
   border-radius: 30px;
   margin-bottom: 46px;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.intro__btn:hover {
+  background: #7153a9;
 }
 
 .intro__p {
@@ -746,6 +753,13 @@
           justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.advantages__btn:hover {
+  background: #7153a9;
 }
 
 .advantages__buttons {
@@ -797,7 +811,7 @@
   margin-bottom: 88px;
 }
 
-.contacts__form {
+.contacts__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -966,6 +980,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.contacts__btn:hover {
+  background: #7153a9;
 }
 
 .course {
@@ -1353,6 +1374,14 @@
   border: 2px solid #FFFFFF;
   border-radius: 15px;
   margin-bottom: 60px;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.adres__btn:hover {
+  background: #fff;
+  color: #9E8DE9;
 }
 
 .adres__subtitle {
@@ -1716,7 +1745,7 @@ input[type=number] {
     display: none;
   }
 
-  .contacts__form {
+  .contacts__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

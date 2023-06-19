@@ -34,7 +34,7 @@
             line-height: 50px;
         }
     }
-    &__form{
+    &__wrapper{
         display: flex;
         justify-content: space-between;
         align-items: stretch;
@@ -176,6 +176,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 300ms ease;
+        &:hover{
+            background: lighten($color: #614791, $amount: 7);
+        }
         @include media(992){
             margin-top: 60px;
         }
