@@ -1,0 +1,79 @@
+.contacts2{
+    padding-bottom: 100px;
+    @include media(768){
+        padding-bottom: 60px;
+    }
+    &__title{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 69px;
+        color: #000000;
+        margin-bottom: 70px;
+        @include media(1200){
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 30px;
+        }
+        @include media(992){
+            font-size: 50px;
+            line-height: 50px;
+        }
+        @include media(768){
+            font-size: 45px;
+            line-height: 45px;
+        }
+        @include media(575){
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 25px;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        @include media(992){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        &:not(:last-of-type){
+            @include media(992){
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        color: #000000;
+        margin-bottom: 22px;
+        @include media(1200){
+            margin-bottom: 10px;
+        }
+        @include media(768){
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &__link{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 40px;
+        color: #000000;
+        @include media(1400){
+            font-size: 33px;
+            line-height: 33px;
+        }
+        @include media(1200){
+            font-size: 27px;
+            line-height: 27px;
+        }
+        @include media(768){
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+}

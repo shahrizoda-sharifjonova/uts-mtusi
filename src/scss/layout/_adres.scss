@@ -1,0 +1,102 @@
+.adres{
+    background: #9E8DE9;
+    border-radius: 20px;
+    padding-top: 85px;
+    padding-bottom: 35px;
+    @include media(992){
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    @include media(575){
+        padding-top: 40px;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(992){
+            flex-direction: column;
+        }
+    }
+    &__left{
+        @include media(992){
+            margin-bottom: 35px;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 57px;
+        line-height: 88px;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+        @include media(1400){
+            font-size: 50px;
+            line-height: 140%;
+            margin-bottom: 30px;
+        }
+        @include media(1200){
+            font-size: 40px;
+        }
+        @include media(768){
+            font-size: 30px;
+        }
+    }
+    &__btn{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        color: #FFFFFF;    
+        max-width: 220px;
+        width: 100%;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        margin-bottom: 60px;
+        @include media(1400){
+            margin-bottom: 30px;
+        }    
+        @include media(575){
+            height: 55px;
+            font-size: 18px;
+        }
+    }
+    &__subtitle{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        @include media(768){
+            font-size: 24px;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 39px;
+        color: #FFFFFF;
+        max-width: 685px;
+        width: 100%;
+        @include media(1200){
+            font-size: 16px;
+            line-height: 140%;
+        }
+        @include media(992){
+            font-size: 18px;
+        }
+        @include media(575){
+            font-size: 16px;
+        }
+    }
+    &__img{
+        max-width: 500px;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
