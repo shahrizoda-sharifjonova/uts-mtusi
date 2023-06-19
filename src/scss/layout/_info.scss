@@ -1,0 +1,138 @@
+.info{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    @include media(768){
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    &__title{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 69px;
+        color: #000000;
+        margin-bottom: 30px;
+        @include media(1200){
+            font-size: 60px;
+            line-height: 60px;
+        }
+        @include media(992){
+            font-size: 50px;
+            line-height: 50px;
+        }
+        @include media(768){
+            font-size: 45px;
+            line-height: 45px;
+        }
+        @include media(575){
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 15px;
+        }
+    }
+    &__desc{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 50px;
+        color: #000000;
+        max-width: 1340px;
+        width: 100%;
+        margin-bottom: 83px;
+        @include media(1200){
+            font-size: 27px;
+            line-height: 140%;
+            margin-bottom: 30px;
+        }
+        @include media(992){
+            font-size: 24px;
+        }
+        @include media(768){
+            font-size: 20px;
+        }
+        @include media(575){
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        max-width: 1116px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    &__item{
+        width: calc(50% - 15px);
+        background: #DDD7F7;
+        border-radius: 30px;
+        padding: 54px 50px;
+        @include media(992){
+            padding: 30px 25px;
+        }
+        @include media(768){
+            width: calc(50% - 7.5px);
+        }
+        @include media(575){
+            width: 100%;
+        }
+        &:nth-of-type(odd){
+            margin-right: 30px;
+            @include media(768){
+                margin-right: 15px;
+            }
+            @include media(575){
+                margin-right: 0;
+            }
+        }
+        &:not(:last-of-type){
+            margin-bottom: 30px;
+            @include media(768){
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 78px;
+        line-height: 69px;
+        color: #000000;
+        margin-bottom: 30px;
+        @include media(1200){
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+        @include media(992){
+            font-size: 40px;
+            line-height: 40px;
+        }
+        @include media(768){
+            font-size: 32px;
+            line-height: 32px;
+        }
+        @include media(575){
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 50px;
+        color: #000000;
+        @include media(992){
+            font-size: 20px;
+            line-height: 140%;
+        }
+        @include media(768){
+            font-size: 18px;
+        }
+        @include media(575){
+            font-size: 16px;
+        }
+    }
+}
